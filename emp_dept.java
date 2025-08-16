@@ -2,7 +2,6 @@ package punit;
 import java.util.Scanner;
 //class of employee
 class Employee {	
-	
 
 	int emp_id;
 	String first_name;
@@ -46,7 +45,7 @@ public static void main(String[] args) {
 	        System.out.println("Access denied. Incorrect password");
 	        return;
 	    }
-	    
+	    //data of employees
 		employee[empdata] =new Employee(101,"James","Carter","Software Engineer",85000,101,"james@gmail.com");
 		empdata++;
 		employee[empdata] =new Employee(102," Sophia"," Martinez"," Marketing Manager",70000,102,"sophia@gmail.com");
@@ -215,5 +214,6 @@ private static void update_emp(Scanner scanner,int id) {
 			System.out.printf("%-6s  %-10s %-10s %-20s %-10.2f %-8d %-15s %n",employee[i].emp_id,employee[i].first_name,employee[i].last_name,employee[i].job_title,employee[i].salary,employee[i].department,employee[i].email);
 		}
 	}
+
 
 }
